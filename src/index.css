@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.screen-max-width {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: 1120px;
+}
+
+.margin-auto{
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+@layer utilities {
+    .common-padding {
+        @apply sm:py-32 py-20 sm:px-10 px-5
+    }
+}
